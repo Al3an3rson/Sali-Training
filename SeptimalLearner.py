@@ -5,7 +5,7 @@ from numpy.random import seed
 
 # Imports dictionary of alphabet in form of csv from Alex's Github website
 # csv delimited by '~', uses python to parse, does not take quotes into account
-df1 = pandas.read_csv("https://raw.githubusercontent.com/Al3an3rson/Sali-Training/main/data.csv", sep = "~", engine='python', quoting=3)
+df1 = pandas.read_csv("https://raw.githubusercontent.com/Al3an3rson/Sali-Training/main/SeptimalData.csv", sep = "~", engine='python', quoting=3)
 
 # Establishes array of indexes to loop through csv
 sequence = [i for i in range(len(df1.index))]
@@ -46,8 +46,7 @@ while(message != "quit" and index < len(sequence)):
     
     # Increases index to move sequence onto next character
     index = index + 1
-
+    
     print()
 
-print(index)
 print("Thank you for training!")
